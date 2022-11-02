@@ -8,6 +8,12 @@
 }
 
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 .flex {
     display: flex;
 }
@@ -20,11 +26,6 @@ header {
     width: 100%;
 }
 
-.header-container {
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
 
 .header-container>div {
     background-color: blueviolet;
@@ -37,10 +38,6 @@ header {
     background-color: aquamarine;
 }
 
-.intro-container {
-    width: 90%;
-    margin: 0 auto;
-}
 
 main .cards {
     justify-content: column;
