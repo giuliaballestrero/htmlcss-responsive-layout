@@ -1,0 +1,29 @@
+/*RESET*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: #0084fd;
+    height: 80px;
+    width: 100%;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header-container>div {
+    background-color: blueviolet;
+}
