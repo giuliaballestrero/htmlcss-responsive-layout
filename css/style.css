@@ -21,6 +21,10 @@
     background-color: #9792e4;
 }
 
+.azure {
+    background-color: #b5ddff;
+}
+
 
 .flex {
     display: flex;
@@ -45,29 +49,27 @@ header .container>div {
 
 /*MAIN*/
 
-#intro {
-    background-color: white;
-}
-
 main .cards,
 main .dev-cards,
-main .test-cards {
+main .test-cards,
+main .benefits-cards {
     justify-content: column;
     flex-wrap: wrap;
     padding: 3rem 0 3rem 0;
 }
 
 main .cards .card,
-main .cards .big-card{
+main .cards .big-card,
+main .benefits-cards .benefits-card{
     height: 300px;
     width: 100%;
-    background-color: #b5ddff;
 }
 
 main .cards .card,
 main .cards .big-card,
 main .dev-cards .dev-card,
-main .test-cards .test-card {
+main .test-cards .test-card,
+main .benefits-cards .benefits-card {
     border: 1px solid black;
     margin-top: 1rem;
 }
@@ -75,10 +77,6 @@ main .test-cards .test-card {
 main .dev-cards .dev-card {
     height: 400px;
     width: 100%;
-}
-
-#testimonials {
-    background-color: white;
 }
 
 
@@ -101,13 +99,23 @@ RESPONSIVE
     
     main .cards .card {
         height: 300px;
-        width: calc(100% / 3 - 1rem);
+        width: calc(100% / 3 - .5rem);
 
     }
     
     main .cards .big-card{
         height: 300px;
-        width: calc((100% / 3) * 2 - 1rem);
+        width: calc((100% / 3) * 2 - .5rem);
+
+    }
+
+    main .benefits-cards {
+        justify-content: space-between;
+    }
+
+    main .benefits-cards .benefits-card {
+        height: 300px;
+        width: calc(100% / 2 - .5rem);
 
     }
 
@@ -115,9 +123,19 @@ RESPONSIVE
 
 @media screen and (min-width: 1160px) {
 
+    .container {
+        width: 60%;
+    }
+
     main .dev-cards {
         flex-wrap: nowrap;
         align-items: flex-end;
+    }
+
+    main .benefits-cards .benefits-card {
+        height: 300px;
+        width: calc(100% / 3 - .5rem);
+
     }
 
 }
