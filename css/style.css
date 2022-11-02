@@ -43,27 +43,61 @@ header {
 }
 
 main .cards {
+    justify-content: column;
     flex-wrap: wrap;
     padding: 3rem 0 3rem 0;
 }
 
+main .cards .card,
+main .cards .big-card{
+    background-color: lime;
+}
+
 main .cards .card {
     height: 300px;
-    width: calc(100% / 3 - 1rem);
-    background-color: lime;
+    width: 100%;
     border: 1px solid black;
     margin: 0 1rem 1rem 0;
 }
 
 main .cards .big-card{
     height: 300px;
-    width: calc((100% / 3) * 2 - 1rem);
-    background-color: lime;
+    width: 100%;
 }
 
+
 /*FOOTER*/
+
+
 
 
 /*****************************
 RESPONSIVE
 *****************************/
+
+@media screen and (min-width: 768px) {
+
+    main .cards {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    main .cards .card {
+        height: 300px;
+        width: calc(100% / 3 - 1rem);
+    }
+    
+    main .cards .big-card{
+        height: 300px;
+        width: calc((100% / 3) * 2 - 1rem);
+
+    }
+
+}
+
+@media screen and (min-width: 1160px) {
+
+
+}
+    
+
