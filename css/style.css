@@ -52,7 +52,8 @@ header .container>div {
 main .cards,
 main .dev-cards,
 main .test-cards,
-main .benefits-cards {
+main .benefits-cards,
+main .about-us {
     justify-content: column;
     flex-wrap: wrap;
     padding: 3rem 0 3rem 0;
@@ -69,16 +70,19 @@ main .cards .card,
 main .cards .big-card,
 main .dev-cards .dev-card,
 main .test-cards .test-card,
-main .benefits-cards .benefits-card {
+main .benefits-cards .benefits-card,
+main .about-us-left,
+main .about-us-right {
     border: 1px solid black;
     margin-top: 1rem;
 }
 
-main .dev-cards .dev-card {
+main .dev-cards .dev-card,
+main .about-us-left,
+main .about-us-right {
     height: 400px;
     width: 100%;
 }
-
 
 
 /*FOOTER*/
@@ -96,6 +100,10 @@ RESPONSIVE
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
+    main .about-us {
+        flex-wrap: nowrap;
+    }
     
     main .cards .card {
         height: 300px;
@@ -109,7 +117,8 @@ RESPONSIVE
 
     }
 
-    main .benefits-cards {
+    main .benefits-cards,
+    main .about-us {
         justify-content: space-between;
     }
 
@@ -117,6 +126,15 @@ RESPONSIVE
         height: 300px;
         width: calc(100% / 2 - .5rem);
 
+    }
+
+    main .about-us-left {
+        width: calc((70%) - 1rem);
+        margin-right: 1rem;
+    }
+    
+    main .about-us-right {
+        width: 30%;
     }
 
 }
@@ -135,7 +153,6 @@ RESPONSIVE
     main .benefits-cards .benefits-card {
         height: 300px;
         width: calc(100% / 3 - .5rem);
-
     }
 
 }
