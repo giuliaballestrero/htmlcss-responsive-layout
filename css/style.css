@@ -7,11 +7,16 @@
     box-sizing: border-box;
 }
 
-
 .container {
     width: 90%;
     margin: 0 auto;
 }
+
+
+.flex {
+    display: flex;
+}
+
 
 .white {
     background-color: #fff;
@@ -25,10 +30,10 @@
     background-color: #b5ddff;
 }
 
-
-.flex {
-    display: flex;
+.black {
+    background-color: #333333;
 }
+
 
 /*HEADER*/
 
@@ -87,6 +92,19 @@ main .about-us-right {
 
 /*FOOTER*/
 
+footer {
+    color: #fff;
+}
+
+footer .get-started-card {
+    text-align: center;
+}
+
+footer #footer-top,
+footer #footer-bottom {
+    height: 150px;
+    padding: 2rem 0 2rem 0;
+}
 
 
 
@@ -137,6 +155,11 @@ RESPONSIVE
         width: 30%;
     }
 
+    footer .container {
+        width: 55%;
+    }
+
+
 }
 
 @media screen and (min-width: 1160px) {
@@ -153,6 +176,10 @@ RESPONSIVE
     main .benefits-cards .benefits-card {
         height: 300px;
         width: calc(100% / 3 - .5rem);
+    }
+
+    footer .container {
+        width: 40%;
     }
 
 }
