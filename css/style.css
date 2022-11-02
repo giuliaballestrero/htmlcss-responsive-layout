@@ -45,7 +45,8 @@ header .container>div {
     background-color: white;
 }
 
-main .cards {
+main .cards,
+main .dev-cards {
     justify-content: column;
     flex-wrap: wrap;
     padding: 3rem 0 3rem 0;
@@ -53,21 +54,27 @@ main .cards {
 
 main .cards .card,
 main .cards .big-card{
+    height: 300px;
+    width: 100%;
     background-color: #b5ddff;
 }
 
 main .cards .card,
 main .cards .big-card,
-main .cards .dev-card {
-    height: 300px;
-    width: 100%;
+main .dev-cards .dev-card {
     border: 1px solid black;
     margin-top: 1rem;
 }
 
-#app-dev {
+#dev-app {
     background-color: #9792e4;
 }
+
+main .dev-cards .dev-card {
+    height: 400px;
+    width: 100%;
+}
+
 
 
 /*FOOTER*/
@@ -89,6 +96,7 @@ RESPONSIVE
     main .cards .card {
         height: 300px;
         width: calc(100% / 3 - 1rem);
+
     }
     
     main .cards .big-card{
@@ -101,6 +109,10 @@ RESPONSIVE
 
 @media screen and (min-width: 1160px) {
 
+    main .dev-cards {
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
 
 }
     
