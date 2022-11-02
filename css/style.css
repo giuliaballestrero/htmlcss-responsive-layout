@@ -12,6 +12,8 @@
     display: flex;
 }
 
+/*HEADER*/
+
 header {
     background-color: #0084fd;
     height: 80px;
@@ -27,3 +29,41 @@ header {
 .header-container>div {
     background-color: blueviolet;
 }
+
+
+/*MAIN*/
+
+#intro {
+    background-color: aquamarine;
+}
+
+.intro-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .cards {
+    flex-wrap: wrap;
+    padding: 3rem 0 3rem 0;
+}
+
+main .cards .card {
+    height: 300px;
+    width: calc(100% / 3 - 1rem);
+    background-color: lime;
+    border: 1px solid black;
+    margin: 0 1rem 1rem 0;
+}
+
+main .cards .big-card{
+    height: 300px;
+    width: calc((100% / 3) * 2 - 1rem);
+    background-color: lime;
+}
+
+/*FOOTER*/
+
+
+/*****************************
+RESPONSIVE
+*****************************/
