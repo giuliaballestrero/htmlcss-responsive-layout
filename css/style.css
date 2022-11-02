@@ -17,6 +17,10 @@
     background-color: #fff;
 }
 
+.violet {
+    background-color: #9792e4;
+}
+
 
 .flex {
     display: flex;
@@ -46,7 +50,8 @@ header .container>div {
 }
 
 main .cards,
-main .dev-cards {
+main .dev-cards,
+main .test-cards {
     justify-content: column;
     flex-wrap: wrap;
     padding: 3rem 0 3rem 0;
@@ -61,18 +66,19 @@ main .cards .big-card{
 
 main .cards .card,
 main .cards .big-card,
-main .dev-cards .dev-card {
+main .dev-cards .dev-card,
+main .test-cards .test-card {
     border: 1px solid black;
     margin-top: 1rem;
-}
-
-#dev-app {
-    background-color: #9792e4;
 }
 
 main .dev-cards .dev-card {
     height: 400px;
     width: 100%;
+}
+
+#testimonials {
+    background-color: white;
 }
 
 
