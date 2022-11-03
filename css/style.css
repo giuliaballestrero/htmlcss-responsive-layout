@@ -25,10 +25,6 @@
     background-color: #fff;
 }
 
-.white-text {
-    color: #fff;
-}
-
 .violet {
     background-color: #9792e4;
 }
@@ -213,8 +209,7 @@ main .test-cards {
     text-align: center;
 }
 
-main .test-cards .test-card:first-child p:first-child,
-main .test-cards .test-card p:nth-child(3){
+main .test-cards .test-card:first-child p:first-child {
     text-transform: uppercase;
 }
 
@@ -226,14 +221,19 @@ main .test-cards .test-card:first-child p:nth-child(2){
     padding: 2rem 0;
 }
 
-main .test-cards .test-card:first-child p:nth-child(3),
-main .test-cards .test-card p:nth-child(2){
-    line-height: 1.5rem;
+main .test-card.violet.flex {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-main .test-cards .test-card p:nth-child(2),
-main .test-cards .test-card p:nth-child(3){ 
-    padding-top: 1rem;
+main .test-card.violet.flex .testimonial-text p {
+    padding-top: 1.5rem;
+    color: #fff;
+}
+
+main .test-card.violet.flex .testimonial-text p:last-child {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 main .test-cards .test-card img {
@@ -301,7 +301,18 @@ RESPONSIVE
     
     main .big-card img {
         width: 50%;
-}
+    }
+
+    main .test-card.violet.flex {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    main .test-card.violet.flex .testimonial-text {
+        text-align: left;
+        padding-left: 2rem;
+    }
+    
 
     main .benefits-cards,
     main .about-us {
