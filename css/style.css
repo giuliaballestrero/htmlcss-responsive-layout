@@ -34,11 +34,28 @@
     background-color: #333333;
 }
 
+ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000 ;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .5rem 1rem;;
+}
+
+li {
+    padding-left: 1.5rem;
+}
 
 /*HEADER*/
 
 header {
     background-color: #0084fd;
+    align-items: center;
     height: 80px;
     width: 100%;
 }
@@ -48,7 +65,12 @@ header .container {
 }
 
 header .container>div {
-    background-color: white;
+    color: #fff;
+    align-items: center;
+}
+
+header .fa-bars {
+    font-size: 2rem;
 }
 
 
@@ -108,9 +130,12 @@ footer #footer-bottom {
 
 
 
+
 /*****************************
 RESPONSIVE
 *****************************/
+
+/*TABLET*/
 
 @media screen and (min-width: 768px) {
 
@@ -158,9 +183,9 @@ RESPONSIVE
     footer .container {
         width: 55%;
     }
-
-
 }
+
+/* DESKTOP */
 
 @media screen and (min-width: 1160px) {
 
