@@ -113,7 +113,6 @@ main .about-us-right {
 main .dev-cards .dev-card,
 main .about-us-left,
 main .about-us-right {
-    height: 400px;
     width: 100%;
 }
 
@@ -159,6 +158,45 @@ main .card .fa-solid {
     font-size: 6rem;
     color: #0084fd;
 }
+
+main .dev-cards .dev-card img {
+    width: 100%;
+
+}
+
+
+main .dev-cards .dev-card {
+    color: #fff;
+}
+
+main .dev-cards .dev-card.white {
+    color: #000;
+}
+
+main .dev-cards .dev-card.white p:nth-child(2),
+main .dev-cards .dev-card p:nth-child(2){
+    font-weight: bold;
+}
+
+main .dev-cards .dev-card p:nth-child(2) {
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+main .dev-cards .dev-card.white p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+main .dev-cards .dev-card.white p:nth-child(3),
+main .dev-cards .dev-card p:nth-child(3){
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+
+main .dev-cards .dev-card.white p:nth-child(3) {
+    font-style: italic;
+}
+
 
 
 /*FOOTER*/
