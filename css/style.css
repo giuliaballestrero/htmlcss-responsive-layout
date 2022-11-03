@@ -52,18 +52,14 @@ header {
     width: 100%;
 }
 
-header a,
-main a,
-#footer-top a {
-    text-decoration: none;
-    color: #000 ;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: .5rem 1rem;;
-}
-
 header li {
     padding-left: 1.5rem;
+}
+
+header a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 15px 15px;
 }
 
 header .container {
@@ -123,13 +119,6 @@ main .about-us-right {
     width: 100%;
 }
 
-main a {
-    color: #fff;
-    padding: 0.5rem 2.5rem;
-    font-size: 1.2rem;
-}
-
-
 main article.big-card p:first-child,
 main article.small-card p:nth-child(2) {
     font-size: 1.5rem;
@@ -139,8 +128,9 @@ main article.small-card p:nth-child(2) {
 
 main article.big-card p:nth-child(2),
 main article.small-card p:nth-child(3) {
-    line-height: 2rem;
-    padding: 1.5rem 0;
+    line-height: 1.5rem;
+    padding: 1.5rem 0 2rem 0;
+
 
 }
 
@@ -150,10 +140,18 @@ main .big-card {
     width: 100%;
 }
 
+main .big-card a {
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 25px 25px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.3rem;
+}
 
 main .big-card img {
     padding-top: 2rem;
     width: 100%;
+    align-self: flex-end;
 }
 
 main .small-card {
@@ -185,6 +183,7 @@ main .dev-cards .dev-card.white a {
     color: #000;
     border-radius: 50%;
     padding: .6rem 1rem .6rem 1rem;
+    text-decoration: none;
 }
 
 main .dev-cards .dev-card.white p:nth-child(2),
@@ -270,6 +269,14 @@ main .about-us h1 {
     font-weight: bold;
 }
 
+main .benefits-card a {
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 25px 25px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.3rem;
+}
+
 main .benefits-card p,
 main  .about-us-left p,
 main .about-us-right p {
@@ -297,9 +304,10 @@ main .about-us-right img {
 }
 
 main .about-us-right a{
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem;
-    min-width: 180px;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 25px 25px;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -353,6 +361,8 @@ footer .get-started-card {
     letter-spacing: 0.3rem;
     color: #9792e4;
     padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px 25px;
 }
 
 #footer-bottom li {
@@ -399,16 +409,16 @@ RESPONSIVE
         width: calc(100% / 3 - .5rem);
 
     }
+
+    main .cards .big-card {
+        padding-bottom: 0;
+    }
     
     main .cards .big-card{
         width: calc((100% / 3) * 2 - .5rem);
     }
 
     
-    main .big-card img {
-        width: 50%;
-    }
-
     main .test-card.violet.flex {
         flex-wrap: nowrap;
         align-items: center;
