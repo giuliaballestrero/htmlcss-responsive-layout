@@ -311,9 +311,45 @@ footer .get-started-card {
     text-align: center;
 }
 
+#footer-top .get-started-card p {
+    padding-bottom: 2rem;
+}
+
+#footer-top .get-started-card ul li {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+
+#footer-top .get-started-card p:first-child {
+    text-transform: uppercase;
+}
+
+
+#footer-top .get-started-card p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+#footer-top .get-started-card p:nth-child(3) {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fdc15f;
+}
+
+#footer-top .get-started-card p:nth-child(4) {
+    line-height: 2rem;
+}
+
+#footer-top .get-started-card a {
+    letter-spacing: 0.3rem;
+    color: #9792e4;
+    padding: 1rem 1.5rem;
+}
+
 footer #footer-top,
 footer #footer-bottom {
-    height: 150px;
     padding: 2rem 0 2rem 0;
 }
 
