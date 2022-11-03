@@ -290,6 +290,10 @@ main .about-us-right {
     padding-bottom: 2rem;
 }
 
+main .about-us-right {
+    position: relative;
+}
+
 main .about-us-right p {
     font-weight: bold;
     font-size: 1.5rem;
@@ -301,6 +305,14 @@ main .about-us-right img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+main .about-us-right span {
+    font-size: 90px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 0;
 }
 
 main .about-us-right a{
