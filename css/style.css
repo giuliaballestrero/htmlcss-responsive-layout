@@ -124,13 +124,15 @@ main a {
 }
 
 
-main article p:first-child {
+main article.big-card p:first-child,
+main article.small-card p:nth-child(2) {
     font-size: 1.5rem;
     font-weight: bold;
     color: #0084fd;
 }
 
-main article p:nth-child(2) {
+main article.big-card p:nth-child(2),
+main article.small-card p:nth-child(3) {
     line-height: 2rem;
     padding: 1.5rem 0;
 
@@ -146,6 +148,16 @@ main .big-card {
 main .big-card img {
     padding-top: 2rem;
     width: 100%;
+}
+
+main .small-card {
+    text-align: center;
+}
+
+main .card .fa-solid {
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    color: #0084fd;
 }
 
 
