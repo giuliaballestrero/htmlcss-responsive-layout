@@ -17,6 +17,9 @@
     display: flex;
 }
 
+.blue {
+    background-color: #0084fd
+}
 
 .white {
     background-color: #fff;
@@ -54,7 +57,6 @@ li {
 /*HEADER*/
 
 header {
-    background-color: #0084fd;
     align-items: center;
     height: 80px;
     width: 100%;
@@ -93,7 +95,6 @@ main .about-us {
 main .cards .card,
 main .cards .big-card,
 main .benefits-cards .benefits-card{
-    height: 300px;
     width: 100%;
 }
 
@@ -104,14 +105,39 @@ main .test-cards .test-card,
 main .benefits-cards .benefits-card,
 main .about-us-left,
 main .about-us-right {
-    border: 1px solid black;
     margin-top: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 10px;
 }
 
 main .dev-cards .dev-card,
 main .about-us-left,
 main .about-us-right {
     height: 400px;
+    width: 100%;
+}
+
+main a {
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.2rem;
+}
+
+
+main article p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0084fd;
+}
+
+main article p:nth-child(2) {
+    line-height: 2rem;
+    padding: 1.5rem 0;
+
+}
+
+main .big-card img {
+    padding-top: 2rem;
     width: 100%;
 }
 
