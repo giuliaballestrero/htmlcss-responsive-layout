@@ -73,6 +73,10 @@ header .fa-bars {
     font-size: 2rem;
 }
 
+header div ul li {
+    display: none;
+}
+
 
 /*MAIN*/
 
@@ -182,6 +186,14 @@ RESPONSIVE
 
     footer .container {
         width: 55%;
+    }
+
+    header div ul li {
+        display: initial;
+    }
+
+    header .fa-bars {
+        display: none;
     }
 }
 
