@@ -25,6 +25,10 @@
     background-color: #fff;
 }
 
+.white-text {
+    color: #fff;
+}
+
 .violet {
     background-color: #9792e4;
 }
@@ -204,6 +208,41 @@ main .dev-cards .dev-card.white p:nth-child(3) {
     font-style: italic;
     padding-bottom: 2rem;
 }
+
+main .test-cards {
+    text-align: center;
+}
+
+main .test-cards .test-card:first-child p:first-child,
+main .test-cards .test-card p:nth-child(3){
+    text-transform: uppercase;
+}
+
+
+main .test-cards .test-card:first-child p:nth-child(2){
+    color: #9792e4;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+main .test-cards .test-card:first-child p:nth-child(3),
+main .test-cards .test-card p:nth-child(2){
+    line-height: 1.5rem;
+}
+
+main .test-cards .test-card p:nth-child(2),
+main .test-cards .test-card p:nth-child(3){ 
+    padding-top: 1rem;
+}
+
+main .test-cards .test-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 
 
