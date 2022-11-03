@@ -42,17 +42,7 @@ ul {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: #000 ;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: .5rem 1rem;;
-}
 
-li {
-    padding-left: 1.5rem;
-}
 
 /*HEADER*/
 
@@ -60,6 +50,20 @@ header {
     align-items: center;
     height: 80px;
     width: 100%;
+}
+
+header a,
+main a,
+#footer-top a {
+    text-decoration: none;
+    color: #000 ;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .5rem 1rem;;
+}
+
+header li {
+    padding-left: 1.5rem;
 }
 
 header .container {
@@ -348,9 +352,17 @@ footer .get-started-card {
     padding: 1rem 1.5rem;
 }
 
+#footer-bottom li {
+    display: inline;
+}
+
 footer #footer-top,
 footer #footer-bottom {
     padding: 2rem 0 2rem 0;
+}
+
+#footer-bottom .get-started-card p:first-child {
+    margin-bottom: 4rem;
 }
 
 
