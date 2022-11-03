@@ -103,7 +103,6 @@ main .benefits-cards .benefits-card{
 }
 
 main .cards .card,
-main .cards .big-card,
 main .dev-cards .dev-card,
 main .test-cards .test-card,
 main .benefits-cards .benefits-card,
@@ -112,6 +111,10 @@ main .about-us-right {
     margin-top: 1rem;
     padding: 2rem 2rem 2rem 2rem;
     border-radius: 10px;
+}
+
+main .cards .big-card {
+    padding-bottom: 0;
 }
 
 main .dev-cards .dev-card,
