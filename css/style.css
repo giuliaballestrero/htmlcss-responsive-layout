@@ -243,6 +243,30 @@ main .test-cards .test-card img {
     object-fit: cover;
 }
 
+main section#benefits div.container p:first-child {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+main .benefits-card h1,
+main .benefits-card h2 {
+    padding-bottom: 1.5rem;
+    color: #9792e4;
+}
+
+main .benefits-card h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main .benefits-card p {
+    padding-bottom: 1rem;
+    line-height: 2rem;
+}
+
 
 
 
@@ -320,7 +344,6 @@ RESPONSIVE
     }
 
     main .benefits-cards .benefits-card {
-        height: 300px;
         width: calc(100% / 2 - .5rem);
     }
 
@@ -366,7 +389,6 @@ RESPONSIVE
     }
 
     main .benefits-cards .benefits-card {
-        height: 300px;
         width: calc(100% / 3 - .5rem);
     }
 
