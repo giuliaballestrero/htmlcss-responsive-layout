@@ -311,8 +311,7 @@ main .about-us-right span {
     font-size: 90px;
     font-weight: bold;
     position: absolute;
-    top: 20px;
-    right: 0;
+    left: 150px;
 }
 
 main .about-us-right a{
