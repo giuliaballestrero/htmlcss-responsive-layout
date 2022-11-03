@@ -253,12 +253,12 @@ RESPONSIVE
 
     main .big-card {
         flex-wrap: nowrap;
+        align-items: flex-start;
     }
 
-    
-    main .big-card img {
-        width: 100%;
-}
+    main .big-card .text {
+        width: 60%
+    }
 
     main .dev-cards {
         flex-wrap: nowrap;
