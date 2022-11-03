@@ -257,17 +257,48 @@ main .benefits-card h2 {
     color: #9792e4;
 }
 
-main .benefits-card h1 {
+main .benefits-card h1,
+main .about-us h1 {
     font-size: 3rem;
     font-weight: bold;
 }
 
-main .benefits-card p {
-    padding-bottom: 1rem;
+main .benefits-card p,
+main  .about-us-left p,
+main .about-us-right p {
     line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+main .about-us h1,
+main .about-us-right {
+    color: #9792e4;
+    padding-bottom: 2rem;
+}
+
+main .about-us-right p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+main .about-us-right img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main .about-us-right a{
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    min-width: 180px;
 }
 
 
+main .about-us-right .fa-linkedin {
+    padding-right: 1rem;
+}
 
 
 /*FOOTER*/
