@@ -106,7 +106,7 @@ main .benefits-cards .benefits-card,
 main .about-us-left,
 main .about-us-right {
     margin-top: 1rem;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 10px;
 }
 
@@ -135,6 +135,13 @@ main article p:nth-child(2) {
     padding: 1.5rem 0;
 
 }
+
+main .big-card {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    width: 100%;
+}
+
 
 main .big-card img {
     padding-top: 2rem;
@@ -169,6 +176,13 @@ RESPONSIVE
 
 @media screen and (min-width: 768px) {
 
+    header div ul li {
+        display: initial;
+    }
+
+    header .fa-bars {
+        display: none;
+    }
     main .cards {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -179,16 +193,18 @@ RESPONSIVE
     }
     
     main .cards .card {
-        height: 300px;
         width: calc(100% / 3 - .5rem);
 
     }
     
     main .cards .big-card{
-        height: 300px;
         width: calc((100% / 3) * 2 - .5rem);
-
     }
+
+    
+    main .big-card img {
+        width: 50%;
+}
 
     main .benefits-cards,
     main .about-us {
@@ -198,7 +214,6 @@ RESPONSIVE
     main .benefits-cards .benefits-card {
         height: 300px;
         width: calc(100% / 2 - .5rem);
-
     }
 
     main .about-us-left {
@@ -214,13 +229,6 @@ RESPONSIVE
         width: 55%;
     }
 
-    header div ul li {
-        display: initial;
-    }
-
-    header .fa-bars {
-        display: none;
-    }
 }
 
 /* DESKTOP */
@@ -230,6 +238,15 @@ RESPONSIVE
     .container {
         width: 60%;
     }
+
+    main .big-card {
+        flex-wrap: nowrap;
+    }
+
+    
+    main .big-card img {
+        width: 100%;
+}
 
     main .dev-cards {
         flex-wrap: nowrap;
